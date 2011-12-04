@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Path to this script
+FILE="${BASH_SOURCE[0]}"
+while [ -h "$FILE" ] ; do
+  SRC="$(readlink "$FILE")"
+  FILE="$( cd -P "$(dirname "$FILE")" && \
+           cd -P "$(dirname "$SRC")" && pwd )/$(basename "$SRC")"
+done
+BX="$( cd -P "$(dirname "$FILE")/.." && pwd )"
+BXCORE="$( cd -P "$BX/../basex" && pwd )"
+
+# API, core, and library classes
+CP="$BX/target/classes"
+CP="$CP$(for JAR in "$BX"/lib/*.jar; do echo -n ":$JAR"; done)"
+CP="$CP:$BXCORE/target/classes"
+CP="$CP$(for JAR in "$BXCORE"/lib/*.jar; do echo -n ":$JAR"; done)"
+
+# Options for virtual machine
+VM=-Xmx512m
+
+# Run code
+java -cp "$CP" $VM org.basex.api.BaseXHTTP "$@" stop
