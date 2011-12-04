@@ -1,0 +1,631 @@
+# LANGUAGE FILE, TRANSLATED BY
+# Toshio HIRAI, Kazuo KASHIMA
+#
+# The '%' character serves as placeholder for texts to be inserted
+
+# Start
+version=バージョン
+
+# Menu Commands
+m_db=データベース
+m_query=クエリー
+m_view=ビュー
+m_nodes=ノード
+m_options=オプション
+m_help=ヘルプ
+
+# Buttons
+b_ok=OK
+b_yes=はい
+b_no=いいえ
+b_opt=最適化
+b_rename=名前の変更
+b_backup=バックアップ
+b_restore=リストア
+b_copy=コピー
+b_open=開く
+b_cancel=中止
+b_drop=削除
+b_cmd=コマンド
+b_xquery=XQuery
+b_browse=参照
+b_search=検索
+b_create=作成
+b_alter=変更
+b_start=開始
+b_stop=終了
+b_connect=接続
+b_disconnect=切断
+b_refresh=更新
+b_delete=削除
+b_delall=全て削除
+b_add=追加
+b_reset=リセット
+
+# Visualizations
+no_data=データがありません
+no_space=十分なスペースがありません
+info_title=クエリー情報
+help_title=ヘルプ
+text_title=テキスト
+explore_title=エクスプローラ
+editor_title=エディタ
+editor_file=ファイル
+
+# Dialog Windows
+d_info=情報
+d_fctitle=ディレクトリの選択
+
+dc_choose=XML文書の保存
+dc_pattern=ファイルパターン(カンマ区切り)
+dc_name=データベースの名前
+dc_namec=コピー先の名称
+dc_target=ターゲットパス
+dc_advtitle=データベースオプション
+dc_chop=空白を取り除く
+dc_intparse=内部XMLパーサーを使用
+dc_archives=アーカイブ内のファイルを解析する
+dc_corrupt=不正な（非整形式の）ファイルをスキップする
+dc_createformat=入力形式
+dc_dtd=DTDとエントリーを解析する
+dc_usecat=XMLカタログファイルを使用する
+dc_usecathlp=カタログの解決を有効にするために
+dc_usecathlp2=Apache XML Commons Resolver がクラスパス上にあることを確認してください
+dc_wcindex=ワイルドカードのサポート
+dc_ftstem=語幹抽出
+dc_ftlang=言語
+dc_ftdc=分音符号
+dc_ftcs=大文字・小文字の区別
+dc_ftsw=ストップワードリスト
+dc_ftsct=TF/IDF スコアリング
+dc_ftsct1=ドキュメント
+dc_ftsct2=テキストノード
+dc_chopinfo=このオプションはタグとコンテンツの間にある全ての空白を削除します
+dc_intparseinfo=このオプションをオフにすると、Java標準のXMLパーサーが使用されます
+dc_formatinfo=入力データは指定された形式から XML に変換されます
+dc_pathinfo=パスサマリーはresolutionを高速化します
+dc_txtinfo=このインデックスはテキスト比較を高速化します
+dc_attinfo=このインデックスは属性比較を高速化します
+dc_ftxinfo=全文テキストインデックスは全文検索を高速化します
+dc_wcinfo=このオプションはワイルドカード検索を高速化します
+dc_ftsteminfo=インデックスが作成される前に、単語の語幹が抽出されます
+dc_ftcsinfo=大文字小文字の区別がインデックス内に保持されます
+dc_ftdcinfo=インデックス内で付加記号（ウムラウト等）は保持されます
+dc_ftlanginfo=指定された言語のテキストパーサが使用されます
+dc_ftscinfo=スコアが計算されてインデックス内に保存されます
+dc_ftswinfo=頻出する語をスキップするストップワードリストを選択してください
+dc_general=一般
+dc_parse=パース
+dc_names=名前
+dc_index=インデックス
+dc_ft=全文
+dc_headerinfo=1行目をヘッダーとして解析します
+dc_linesinfo=改行で分割する
+dc_forminfo=XML フォーマット
+dc_separatorinfo=セパレータ
+
+do_title=データベースを開く
+do_large=% は巨大なデータベースです。処理速度向上のために\nいくつかのビジュアライゼーションを閉じますか？
+do_nodbquestion=新しいデータベースを作成しますか。
+do_checkver=新しいバージョンが利用可能です (% %)!\nアップデートしますか？
+
+dr_title=データベースの名前を変更
+dr_title2=ドキュメントの削除
+dr_title3=ドキュメントのコピー
+dr_over=古いデータベースは上書きされます
+dr_empty=空のデータベースが作成されます
+dr_delete=% ドキュメントは削除されます
+
+dd_title=データベースの管理
+dd_question=% 一つ以上のデータベースが削除されます
+dd_sure=よろしいですか。
+
+dx_question=本当に削除しますか？
+dq_question=% への変更を保存しますか？
+
+dx_outdir=出力ディレクトリ
+dx_overfile=ファイルは上書きされます。
+dx_indent=スペースでインデント
+
+dp_title=設定
+dp_dbpath=データベースパス (データベースを手動で移動する必要があります)
+dp_inter=ユーザーインターフェース
+dp_lf=Use Javaのルック＆フィール
+dp_focus=リアルタイムマウスフォーカス
+dp_simplefd=簡易版ファイル選択画面を使用
+dp_names=タグを@name属性で置き換え
+dp_lang=言語
+dp_restart=再起動が必要です
+
+dn_title=新規データの作成
+de_title=データの編集
+de_name=名前
+de_value=値
+de_text=% の編集
+de_kind1=ルートノード
+de_kind2=要素
+de_kind3=テキスト
+de_kind4=属性
+de_kind5=コメント
+de_kind6=PI
+
+df_title=フォントの選択
+df_type1=通常
+df_type2=太字
+df_type3=斜体
+
+dy_title=カラースキーマ
+dy_red=赤
+dy_green=緑
+dy_blue=青
+
+dm_title=マップレイアウト
+dm_atts=属性の表示
+dm_choice1=タイトル、枠線無し
+dm_choice2=タイトル無し、枠線最細
+dm_choice3=タイトル有り、枠線無し
+dm_choice4=タイトル有り、枠線最細
+dm_choice5=タイトル有り、枠線細
+dm_offset=オフセット
+dm_size=比率:
+dm_size_children=子の数
+dm_size_textsize=テキスト長
+dm_size_both=子/テキスト長
+
+dt_title=ツリービューオプション
+dt_atts=属性の表示
+dt_slim=ノードをテキストに調整
+
+dz_total=メモリ合計
+dz_reserved=予約メモリ量
+dz_used=メモリ使用量
+dz_help=メモリが少ない場合はBaseXを起動する際に、\nJavaのコマンドライン引数 -Xmx <サイズ> を付けて下さい。
+
+da_title=%について
+da_license=BSD License
+da_dev=メイン開発者
+da_cont1=チーム
+da_cont2=その他の貢献者
+da_translation=翻訳
+
+ds_localserver=ローカルサーバー
+ds_connect=接続
+ds_users=ユーザー
+ds_host=ホスト
+ds_port=ポート
+ds_localport=ローカルポート
+ds_createu=ユーザー作成
+ds_globperm=グローバルパーミッション
+ds_locperm=ローカルパーミッション
+ds_drquestion=% ユーザーが削除されます
+ds_dbrevoke=パーミッション '%'取り消し
+ds_alterpw=パスワードの変更
+ds_invalid=% は不正です
+ds_adlogin=管理者ログイン (ローカルあるいはリモート)
+ds_databases=データベース
+ds_backups=バックアップ
+ds_sessions=セッション
+ds_locallogs=ログ
+ds_connected=%:% に接続されました。
+ds_disconnected=切断されました。
+ds_info1=このダイアログはクライアント・サーバー環境の設定のためのものです。
+ds_info2=GUI機能には影響を与えません。
+
+# GUI Commands
+
+c_about=%について
+c_abouttt=このプロジェクトについての概要を表示します。
+c_all=全選択
+c_close=閉じる
+c_closett=現在のデータベースを閉じます。
+c_color=色
+c_colortt=アプリケーションの配色を変更します。
+c_copy=コピー
+c_copytt=現在選択中のXMLノードをコピーします。
+c_cppath=パスのコピー
+c_cppathtt=パスを選択されたXMLノードにコピーします。
+c_create=新規
+c_creatett=選択されたXML文書からデータベースを作成します。
+c_cut=カット
+c_delete=ノードの削除
+c_deletett=XMLノードを削除します。
+c_manage=管理
+c_managett=データベースを管理します。
+c_edit=編集
+c_edittt=XMLノードの編集
+c_exit=終了
+c_exittt=アプリケーションを終了します。
+c_export=XMLの出力
+c_exporttt=現在のデータベースをXML文書として出力します。
+c_filter=選択中のノードのフィルター
+c_filtertt=選択されたノードをフィルターします。
+c_fonts=フォント
+c_fontstt=フォントを変更します。
+c_full=全画面表示
+c_fulltt=全画面表示します。
+c_goback=戻る
+c_goforward=進む
+c_goup=上へ
+c_gouptt=1階層上に行きます。
+c_props=情報
+c_propstt=現在選択されているデータベースについての情報を表示します。
+c_add=ドキュメントの追加
+c_addtt=現在開いているデータベースにドキュメントを追加します。
+c_drop=ドキュメントの削除
+c_droptt=現在開いているデータベースからドキュメントを削除します。
+c_insert=新規
+c_inserttt=新しいXMLノードを作成します。
+c_maplayout=マップレイアウト
+c_maplayouttt=マップレイアウトを変更します。
+c_treeoptions=ツリーオプション
+c_treeoptionstt=ツリービューのオプション。
+c_open=開く
+c_opentt=データベースを開きます。
+c_paste=ペースト
+c_pastett=以前コピーしたノードを貼付けます。
+c_prefs=設定
+c_prefstt=アプリケーションの設定を表示します。
+c_redo=リドゥ
+c_root=ホームへ
+c_roottt=ルートノードへ戻ります。
+c_rtexec=リアルタイムでの実行
+c_rtexectt=このオプションが有効な場合、キー入力の度にクエリーが実行されます。
+c_rtfilter=リアルタイムフィルタリング
+c_rtfiltertt=このオプションが有効な場合、クエリー結果が自動的にフィルターされます。
+c_showbuttons=ボタン
+c_showbuttonstt=ボタンバーのオン・オフを切り替えます。
+c_showexplore=エクスプローラ
+c_showexplorett=クエリーパネルを表示します。
+c_showfolder=フォルダー
+c_showfoldertt=視覚化されたフォルダーを表示します。
+c_showhelp=ヘルプ
+c_showhelptt=ヘルプビューを表示します。現在フォーカスが当たっているコンポーネントに関するヘルプを表示します。
+c_community=コミュニティ
+c_communitytt=コミュニティのWebページを開きます(デフォルトのブラウザを起動します)。
+c_doc=Documentation
+c_doctt=Show the documentation web page.
+c_updates=更新の確認
+c_updatestt=更新情報を開きます。
+c_showinfo=クエリー情報
+c_showinfott=クエリー情報パネルを表示します。
+c_showinput=入力フィールド
+c_showinputtt=入力フィールドの表示を切り替えます。
+c_showmap=マップ
+c_showmaptt=マップビューを表示します。
+c_showmenu=メニュー
+c_showmenutt=メニューの表示・非表示を切り替えます。
+c_showstatus=ステータスバー
+c_showstatustt=ステータスバーの表示・非表示を切り替えます。
+c_showtable=テーブル
+c_showtablett=テーブルビューを表示します。
+c_showtree=ツリー
+c_showtreett=視覚化されたツリーを表示します。
+c_showplot=プロット
+c_showplottt=散布図（scatter-plot）を表示します。
+c_showtext=テキストビュー
+c_showtexttt=テキストビューを表示します。
+c_showxquery=クエリーパネル
+c_showxquerytt=クエリーパネルを表示します。
+c_undo=アンドゥ
+c_xqnew=新規
+c_xqnewtt=新しいファイルを作成します。
+c_xqopen=開く
+c_xqopentt=XQueryファイルを開きます。
+c_xqclose=閉じる
+c_xqclosett=現在開いているファイルを閉じます
+c_save=保存
+c_savett=ファイルを保存します。
+c_saveas=別名で保存
+c_notopened=ファイルが開けませんでした。
+c_notsaved=ファイルを保存できませんでした。
+c_replace=ファイル "%" は既に存在します。\n置換してよろしいですか？
+c_dirreplace=ファイル % は置換されます\n続けてもよろしいですか？
+c_server=サーバー管理
+c_servertt=ユーザー管理及びログトレースの画面を表示します。
+
+# Commands
+proc_time=所要時間
+proc_syntax=文法
+proc_err=%を実行できませんでした。
+proc_nodb=メモリー上にデータベースはありません。
+proc_mm=メインメモリモードでは（この？）コマンドは使用できません。
+proc_mem=メモリー不足。\n以下のヒントが役に立つかもしれません。
+proc_memcreate=\n- -Xmx<サイズ>を使うことで、Javaのヒープサイズを増やすことが出来ます。\n- BaseXの内部XMLパーサーに 'set intparse on' を設定してみて下さい。 \n- いくつかのインデックスを無効にすることによりメモリーを節約できます。
+
+cmd_no=予想されるコマンド
+cmd_unknown=不明なコマンドです '%'
+cmd_similar='%' の間違いではないですか？
+
+# Help Commands
+help_short="%"を試してください
+help_intro="%" と入力すると全般的な情報が得られます。
+help_long="% [...]" と入力すると、コマンドについての情報が得られます。
+
+# Create Command
+pc_create=データベースが作成されました。
+pc_index=インデックスを作成中です。
+pc_update=データベース形式を変更しました。新しいデータベースを作成して下さい。
+pc_indupdate=インデックス形式を変更しました。新しくインデックスを作成して下さい。
+pc_corrupt=Warning: the database may be corrupt!
+pc_cancel=データベース作成処理はキャンセルされました。
+pc_finish=終了しました。
+pc_indextxt=テキストインデックスを作成中です。
+pc_indexatt=属性インデックスを作成中です。
+pc_indexftx=全文インデックスを作成中です。
+pc_parse=% (% ノードがパースされました)。
+pc_created=% にデータベースが作成されました。
+pc_added=パス '%' が  % に追加されました。
+pc_deleted=% ドキュメントが  % から削除されました。
+pc_renamed=% ドキュメントが  % でリネームされました。
+pc_replaced=% ドキュメントが  % で置換されました。
+pc_filenf=ファイル "%" が見付かりませんでした。
+pc_pathnf=ファイル又はディレクトリが見つかりませんでした。
+pc_skipped=スキップしました。
+pc_skipinfo=% 件のファイルをスキップしました。
+pc_dbnf=データベース名を入力してください。
+pc_notok="%"のトークナイザは使用できません。
+pc_nostem="%"の語幹抽出は使用できません。
+pc_err="%" をパースできませんでした。
+pc_pos=% (% 行)。
+pc_direrr="%" ディレクトリを示します。
+
+# Database commands
+db_no=データベース '%' が見付かりませんでした。
+db_invalid='%' は不正な名前です。
+db_locked=データベース '%' はロックされています。
+db_closed=データベース '%' を閉じました。
+db_closeerr=データベース '%' を閉じる事が出来ませんでした。
+db_optimized=データベース '%' を  % で最適化しました。
+db_dropped=データベース '%' が削除されました。
+db_notdropped=データベースは削除されませんでした。
+db_droperror=データベース '%' を削除できませんでした。
+db_altered=データベース '%' は '%' にリネームされました。
+db_notaltered=データベース '%' はリネームできませんでした。
+db_flushed=データベース '%' を % でフラッシュしました。
+db_backup='%' のバックアップを % で作成しました。
+db_nobackup=データベース '%' のバックアップは作成されませんでした。
+db_copy='%' のコピーが % に作成されました。
+db_nocopy='%' のコピーは作成されませんでした。
+db_restore='%' は % にリストアされました。
+db_norestore='%' リストアできませんでした。
+db_notopened=データベースを開けませんでした。
+db_opened=データベース "%" を  % で開きました。
+db_exported=データベース "%" が  % に出力しました。
+db_notdeleted=ファイル '%' を削除できませんでした。
+db_exists=同じ名前のデータベース "%" が存在します。
+db_backdrop=バックアップファイル '%' はドロップされました。
+db_backnf='%' のバックアップがみつかりませんでした。
+db_notstored=ファイル '%' を格納できませんでした。
+
+# Index commands
+in_created=% にインデックスが作成されました。
+in_dropped=% インデックスを削除しました。
+in_notdropped=インデックスを削除できませんでした。
+in_notavl=利用できません。
+
+# Server Info
+srv_denied=アクセスが拒否されました。
+srv_connect=サーバーと通信できません。
+srv_timeout=タイムアウトになりました。
+srv_bind=サーバーが既に起動しているか、権限が足りません。
+srv_ports=ポート番号 '%' に対する指定が重複しています。
+srv_unknown='%' は不明なホスト名です。
+srv_start=サーバーを開始しました。
+srv_stop=サーバーが停止しました。
+srv_user=ユーザー名
+srv_pw=パスワード
+
+# Bye
+bye1=バイバイ
+bye2=またね。
+bye3=また次回。
+bye4=じゃーね。
+
+# Query Commands
+qu_query=クエリー
+qu_comp=コンパイル中
+qu_eval=計算中
+qu_time=タイミング
+qu_result=結果
+qu_plan=クエリー計画
+qu_hits=ヒット
+qu_tabquery=クエリー
+qu_tabpars=パース中
+qu_tabcomp=コンパイル中
+qu_tabeval=計算中
+qu_tabprint=印刷中
+qu_tabtotal=合計時間
+qu_tabupdated=更新しました
+qu_tabprinted=印刷しました
+qu_tabhits=結果
+qu_nodeserr=クエリーはノードセットを返さなければいけません。
+qu_stopped=停止しました。
+qu_line=% 行
+qu_col=% 列
+qu_file=% の
+qu_exec=% のクエリーが実行されました。
+
+# Admin Commands
+ad_databases=% 個のデータベースが開かれています。
+ad_sessions=% セッション
+ad_events=% イベント
+ad_packages=パッケージ
+ad_permno=% パーミッションが必要です。
+ad_perminv=% は不明なパーミッションです。
+ad_grant=% を '%' に与えました.
+ad_granton=% を '%' に与えました（データベース：'%'）。
+ad_userno=ユーザー '%' が見付かりません。
+ad_userknown=ユーザー '%' は既に存在します。
+ad_usercreate=ユーザー '%' が作成されました。
+ad_useralter=ユーザー '%' のパスワードを変更しました。
+ad_userdrop=ユーザー '%' は削除されました。
+ad_userdropon=ユーザー '%' はデータベース '%' から削除されました。
+ad_userlog=ユーザー '%' は現在ログインしています。
+ad_usermd5=パスワードが有効なMD5ハッシュ値ではありません。
+ad_admin=Admin ユーザーは編集できません。
+ad_kill=% セッションが切断されました。
+ad_killself='%' 自身のセッションを切断する事は出来ません。
+ad_eventdrop=イベント '%' が削除されました。
+ad_eventcreate=イベント '%' が作成されました。
+ad_eventknown=イベント '%' は既に存在しています。
+ad_eventno=イベント '%' は不明です。
+ad_eventalr=既にイベントを監視しています '%'。
+ad_eventnouw=イベント '%' は監視されていません。
+ad_eventatt=イベント '%' を監視しています.
+ad_eventdet=イベント '%' は監視外です。
+ad_repodelete=パッケージ '%' が削除されました。
+ad_repoinstall=パッケージ '%' は % にインストールされました。
+
+# General Commands
+gc_setwhich='%' は不明なオプションです。
+gc_setval=プロパティ '%' を '%' に変更する事が出来ませんでした。
+
+# Info Strings
+info_wait=お待ち下さい
+info_index=インデックス
+info_opt=データベースを最適化中
+info_stats=統計の作成
+info_dbname=データベース名
+info_nres=リソース
+info_docsize=文書のサイズ
+info_dbsize=データベースサイズ
+info_type=タイプ
+info_path=文書のパス
+info_time=タイムスタンプ
+info_mem=メインメモリの使用量
+info_nodes=テーブルノード
+info_encoding=文字コード
+info_dbpath=データベースパス
+info_nodb=データベースが見付かりません。
+info_dberror=開けませんでした。
+info_chop=空白の除去
+info_tags=タグインデックス
+info_atts=属性名インデックス
+info_ns=名前空間
+info_uptodate=最新
+info_pathindex=パスサマリー
+info_txtindex=テキストインデックス
+info_atvindex=属性インデックス
+info_ftindex=全文インデックス
+info_wcindex=ワイルドカード
+info_outofdate=期限切れ
+info_db=データベース情報
+info_resource=リソースプロパティ
+info_general=一般事項
+info_resultchop=省略されました
+info_on=ON
+info_off=OFF
+info_error=エラー
+info_entries=% 個のエントリー
+info_browsererror=ブラウザの起動に失敗しました。任意のブラウザでこのURLを指定して開いてください:\n\n%
+
+# Command Help
+ch_nohelp=ヘルプがありません。
+ch_create1=データベース又はインデックスの作成
+ch_create2=新しいデータベース、インデックス、ユーザ、またはイベントのいずれかを作成します:
+ch_create3=データベースを作成します [%]。 [%] をオプションとして指定できます。
+ch_create4=データベースのバックアップを [%] に作成します
+ch_create5=指定されたインデックスを作成します。
+ch_create8=指定されたユーザーを作成します。
+ch_create9=イベントを作成します。
+ch_check1=データベースのオープン、または、作成。
+ch_check2=既存のデータベースを開くか、または、新しいインスタンスを作成します。
+ch_copy1=データベースのコピー。
+ch_copy2=コピーされたデータベースを新しく作成します。
+ch_add1=ドキュメントの追加
+ch_add2=[%] を [%] としてデータベースに追加します。
+ch_delete1=ドキュメントの削除
+ch_delete2=現在のデータベースからドキュメントを削除します。
+ch_open1=データベースを開く
+ch_open2=指定されたデータベース [%] を開きます。
+ch_info1=現在のデータベースに関する情報を表示します。
+ch_info21=現在開いているデータベースに関する情報を表示します。
+ch_info22=引数無し: 一般事項の表示
+ch_info23=データベース情報を表示します。
+ch_info24=インデックス情報を表示します。
+ch_info25=XMLテーブルの表示
+ch_close1=現在のデータベースを閉じる
+ch_close2=現在のデータベースを閉じて、メインメモリをリセットします。
+ch_list1=利用可能なデータベースの一覧
+ch_list2=利用可能なデータベースの一覧を表示します。
+ch_drop1=データベース又はインデックスの削除
+ch_drop2=データベース、インデックス、あるいはユーザーを削除します。
+ch_drop21=データベースを削除します。
+ch_drop22=指定されたインデックスを削除します。
+ch_drop23=指定された (database 上の) ユーザを削除します。
+ch_drop24=データベースのバックアップを削除します。
+ch_drop25=イベントを削除します。
+ch_alter1=データベース名、または、ユーザパスワードの変更。
+ch_alter2=データベースの名称、または、ユーザーパスワードを変更します:
+ch_alterpw=ユーザのパスワードを変更します。
+ch_alterdb=データベースの名称を変更します。
+ch_optimize1=データベースの最適化
+ch_optimize2=現在開いているデータベースを最適化します。\n % が指定された場合、データベースサイズは最小化されます。
+ch_export1=データベースをXMLで出力
+ch_export2=現在のコンテクストをXML文書として [%] に出力します。
+ch_xquery1=XQuery の評価
+ch_xquery2=XQueryを評価し、結果を表示します
+ch_run1=ファイルをXQueryとして評価
+ch_run2=[%] からXQueryを読み込んで、結果を表示します。
+ch_find1=キーワードクエリーの評価
+ch_find2=以下の修飾子が使えます。:\n =  : 完全に一致するテキストノードを検索します\n @= : 完全に一致する属性を検索します。\n @  : 属性を検索します。
+ch_flush1=データベースのフラッシュ。
+ch_flush2=すべてのデータベースバッファをファイルに書き込みます。
+ch_cs1=XQueryの実行と、コンテキストセットへの結果のセット。
+ch_cs2=指定されたクエリーを実行し、新しいコンテキストセットとして結果をセットします。
+ch_kill1=ユーザーセッションの強制切断
+ch_kill2=指定されたユーザーの全てのセッションを切断します。
+ch_rename1=データベースのドキュメントパスをリネーム。
+ch_rename2=現在開いているデータベースのドキュメントパス名称をリネームします。
+ch_replace1=データベースのドキュメントを置換。
+ch_replace2=現在開いているデータベースのドキュメントを置換します。
+ch_restore1=データベースのリストア。
+ch_restore2=データベースをリストアします。引数に\nバックアップファイルのタイムスタンプを含めることが出来ます。
+ch_show1=サーバー情報の表示
+ch_show21=サーバー情報を表示します:
+ch_show22=現在開かれているデータベースを表示します。
+ch_show23=現在のデータベースセッションを表示します。
+ch_show24=データベースにアクセスできるユーザーを表示します。
+ch_show25=バックアップを表示します。
+ch_show26=イベントを表示します。
+ch_grant1=パーミッションの付与
+ch_grant2=ユーザーにデータベースに対するパーミッションを与えます。
+ch_set1=グローバルオプションをセットします。
+ch_set2=Sets a database option to a new value.
+ch_get1=グローバルオプションを表示します。
+ch_get2=グローバルオプションの値を表示します。
+ch_password1=パスワードの変更
+ch_password2=パスワードを変更します。
+ch_help1=ヘルプをオンにする % コマンド
+ch_help2=[%] が指定された場合、指定されたコマンドに関する情報が\n 表示されます。指定しなかった場合は全てのコマンドが表示されます。
+ch_exit1=アプリケーションの終了
+ch_exit2=% を終了します。
+ch_repo1=パッケージのインストール、削除、または、リスト表示。
+ch_repo2=パッケージをレポジトリからインストール、削除、または、リスト表示します
+ch_repo3=名前 [%] または、 ディレクトリ [%] を指定して、パッケージを削除します。
+ch_repo4=パス [%] からパッケージをインストールします。
+ch_repo5=既にインストール済みのパッケージをリスト表示します。
+ch_retrieve1=Rawデータを取り出します。
+ch_retrieve2=Rawデータを指定された [%] から取り出します。
+ch_store1=Rawデータを格納します。
+ch_store2=Rawデータを指定された [%] に格納します。
+
+# Help Texts
+h_hist=入力履歴の表示
+h_save=検索結果を保存します。
+h_go=クエリーを実行します。
+h_stop=現在の操作を中止します。
+h_recent=最近オープンしたファイル
+h_cmd=ここにBaseXのコマンドを入力できます。'help' と入力すると全てのコマンドが表示されます。\n\n以前の入力したコマンドを呼び出すには↑↓ボタンを使います。
+h_searchxml=テキストフィールドに何か入力してXML文書を検索します。以下の文法が使えます。\n...      タグとテキストを検索します。\n=...   入力と完全に一致するテキストノードを検索します。\n@ ...  属性と属性値を検索します。\n@=   入力と完全に一致する属性値を検索します。\n/...     入力をXQueryとして評価します。
+h_xpath=XQueryモードでは簡単なXQueryを入力できます。
+h_map=この視覚化の方法はツリーマップ（TreeMap）と呼ばれ、XML文書の全てのノードは四角で表現され、領域全体を埋めつくします。ノードをクリックするとハイライト表示され、ダブルクリックするとそのノード以下が表示されます。各要素でライトクリックするとポップアップメニューが表示されます。
+h_tree=このビジュアライゼーションはツリービューと呼ばれます。XMLドキュメントをツリーとして表示し、階層的な順序で描画します。各ノードはシングルクリックでハイライト、ダブルクリックでフィルターすることができます。要素上で右クリックすると、ポップアップメニューを表示します。
+h_plot=この視覚化の方法は散布図（Scatterplot）と呼ばれ、全てのXMLノードは散布図で表示されます。 ノードをクリックするとハイライト表示され、ダブルクリックするとそのノード以下が表示されます。 各要素でライトクリックするとポップアップメニューが表示されます。
+h_folder=全てのXMLノードを通常の木構造で表示します。ノードの横の矢印をクリックすることにより開閉できます。また、ノードをクリックするとハイライト表示、ダブルクリックするとそのノードにズームインします。XML文書の探索には効率的な方法です。また各要素でライトクリックするとポップアップメニューが表示されます。
+h_table=XMLノードを表形式で表示します。テキストをクリックすると、そのテキストを持つ全てのノードがハイライト表示されます。テキストをダブルクリックすると、そのノード以下が表示されます。また各要素でライトクリックするとポップアップメニューが表示されます。
+h_text=このパネルはクエリーの結果やその他出力を表示します。\n\nキーボードショートカット:'-' と '+' で全てのパネルのフォントサイズを変更できます。任意のテキストを入力することによりインクリメンタルサーチでテキストを簡単に検索する事が出来ます。
+h_info=このパネルではXQueryのコンパイル・評価についての情報を簡単なプロファイル情報と共に表示します。
+h_explore=単純検索モードは簡単にXML文書内を検索できます。
+h_xquery=このテキストエリアには任意のXQueryクエリーを入力できます。入力値はキーを押す度に評価されます。\n\n以下の例は'BaseX'というtopicを持つ全ての本のタイトルを表示します。:\n\n for $a in //book\n where $a/topic = "XML"\n return $a/title"
+h_mover=各ビュー上部のバーをドラッグすることにより、ビューをメインウィンドウ内の任意の場所に移動することが出来ます。\nビューをメインウィンドウの外側に移動した場合、そのビューは閉じられます。
