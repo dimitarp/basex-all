@@ -1,0 +1,14 @@
+# Property File.
+# You can set additional options at the end of the file.
+
+DBPATH =
+HTTPPATH =
+LANG = English
+LANGKEYS = false
+HOST = localhost
+PORT = 1984
+SERVERPORT = 1984
+HTTPPORT = 8984
+TIMEOUT = 0
+
+# User defined section

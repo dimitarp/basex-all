@@ -1,0 +1,26 @@
+Source: basex
+Section: database
+Priority: optional
+Maintainer: Alexander Holupirek <alex@holupirek.de>
+Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.4)
+Standards-Version: 3.9.2
+Vcs-Git: https://github.com/BaseXdb/basex-dist/tree/master/linux/debian
+Vcs-Browser: https://github.com/BaseXdb/basex-dist/tree/master/linux/debian
+Homepage: http://basex.org
+
+Package: basex
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}, java-wrappers, default-jre | java6-runtime
+Suggests: libtagsoup-java
+Description: XML database and XPath/XQuery processor
+ BaseX is a very fast and light-weight, yet powerful XML database and
+ XPath/XQuery processor, including support for the latest W3C Full Text and
+ Update Recommendations. It supports large XML instances and offers a highly
+ interactive front-end (basexgui). Apart from two local standalone modes, BaseX
+ offers a client/server architecture.
+ .
+ The package provides following commands:
+  * basex  ..........  Standalone local XML database. Command line interface.
+  * basexgui  .......  Standalone local XML database. Graphical user interface.
+  * basexserver  ....  BaseX XML Database Server.
+  * basexclient  ....  BaseX XML Database Client.

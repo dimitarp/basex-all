@@ -1,0 +1,219 @@
+basex (7.0.2-1) unstable; urgency=low
+
+  * New upstream release (November 11, 2011)
+    FULL TEXT
+    - Stemming support for Japanese text corpora
+      (thanks to Toshio HIRAI!)
+    STARTUP
+    - Updated start scripts (thanks to Ralf Jung!)
+    - System property "org.basex.path" added to specify
+      project's home directory (thanks to malamut2!)
+    XQUERY
+    - Numerous minor XQuery 3.0 enhancements and fixes
+    - Fix for db:optimize() calls (thanks to Martin Hillert!)
+    STORAGE
+    - Fix to retain newly introduced namespaces
+      (thanks to Laurent Chevalier!)
+    USERS
+    - Default privileges for new users set to "none"
+      (thanks to Pascal Heus!)
+    REST
+    - query base URI for evaluated queries is now $HTTPPATH
+      (thanks to Florent Georges!)
+
+  * Resolved policy violation by talking to upstream (closes: #647422) 
+
+ -- Alexander Holupirek <alex@holupirek.de>  Sat, 12 Nov 2011 21:38:31 +0100
+
+basex (7.0.1-1) unstable; urgency=low
+
+  * New upstream release (October 23, 2011)
+    XQUERY
+    - much faster execution of count() when applied to opened databases
+
+ -- Alexander Holupirek <alex@holupirek.de>  Wed, 02 Nov 2011 23:06:11 +0100
+
+basex (7.0-1) unstable; urgency=low
+
+  * New upstream release (October 14, 2010) TEI EDITION
+    XQuery
+    - [ADD] Parsing and serializing JSON documents
+    - [ADD] SQL module builds a JDBC bridge to access relational databases 
+    - [ADD] EXPath Cryptographic Module for encryption and XML Signatures
+    - [ADD] Full text engine tokenizes Japanese texts (thx to Toshio Hirai!)
+    - [ADD] db:retrieve() and db:store() handle raw data
+    - [ADD] util:uuid() to create random universally unique identifier
+    - [ADD] db:content-type() retrieves the content type of a resource
+    - [ADD] db:exists() checks if the specified database or resource exists
+    - [ADD] db:is-raw(), db:is-xml() check existence and type of a resource
+    - [MOD] db:list(), db:open() uses two separate arguments to specify
+            database and resource path
+    - [MOD] further modifications: db:add(), 
+    
+    SERVER
+    - [ADD] BaseX HTTP Server activates the REST and WebDAV services
+    - [MOD] ITER command returns all results in one go and the client
+            handles the iterative execution
+    
+    COMMANDS
+    - [ADD] FLUSH command to write all database buffers to disk
+    - [ADD] STORE command to store raw data in a database
+    - [ADD] RETRIEVE command to get raw data from the database
+    - [MOD] modified ADD command
+    
+    OPTIONS
+    - [ADD] SERVERHOST: to specify a server
+    - [ADD] KEEPALIVE: optional timeout to close inactive client sessions
+    - [ADD] AUTOFLUSH database buffers
+    - [ADD] QUERYPATH: path to executed query
+  * Added new database commands to man pages.
+  * Added debian/basexgui.desktop file (closes LP: 872072)
+  * Added BaseX icon PNG files for /usr/share/icons/hicolor/?x?/apps to 
+    be displayed in the KDE, Gnome, Unity ... menus.
+  * Fixed unversioned-copyright-format-uri warning in dep5 copyright file.
+
+ -- Alexander Holupirek <alex@holupirek.de>  Thu, 20 Oct 2011 13:55:22 +0200
+
+basex (6.7.1-1) unstable; urgency=low
+
+  * New upstream release
+    XQuery:
+    - New database functions for adding, deleting, renaming
+      and replacing documents, and optimizing databases:
+      http://docs.basex.org/wiki/Database_Functions
+    - XSLT transformations via Java or Saxon:
+      http://docs.basex.org/wiki/XSLT_Functions
+    - All XQuery 3.0 functions are now supported:
+      http://docs.basex.org/wiki/XQuery_3.0
+    - Tail-call optimizations to speed up recursive functions
+
+    Storage:
+    - Use ADDARCHIVES to parse files within archives
+    - Use SKIPCORRUPT to skip non-well-formed files when
+      creating a database: http://docs.basex.org/wiki/Options
+    - Max. level depth limit (256) removed
+    - The document index is now incrementally updated
+
+    GUI:
+    - "Manage Database" dialog now supports operations on
+      multiple databases and the command-line glob syntax:
+      http://docs.basex.org/wiki/Commands#Glob_Syntax
+    - Drag and drop operations introduced for opening new files
+      and copying file paths
+
+    Client/Server:
+    - Delay clients that repeatedly fail to login
+    - All remaining plain-text password operations now use
+      MD5 to send and log passwords
+
+ -- Alexander Holupirek <alex@holupirek.de>  Thu, 28 Jul 2011 21:23:04 +0200
+
+basex (6.7-1) unstable; urgency=low
+
+  * New upstream release
+    - Main Features:
+      [ADD] Native support for the EXPath Packaging system:
+            http://docs.basex.org/wiki/Packaging
+      [ADD] Client/server event notification:
+            http://docs.basex.org/wiki/Events
+      [ADD] Persistent document index added to speed up
+            access to large collections
+    - XQuery:
+      [ADD] New database and full-text functions:
+            http://docs.basex.org/wiki/Database_Functions
+            http://docs.basex.org/wiki/Full-Text_Functions
+      [ADD] Event function added to fire events
+      [MOD] Index optimizations, better cost estimations
+    - Commands:
+      [ADD] Glob syntax introduced to database commands:
+            http://docs.basex.org/wiki/Commands
+      [ADD] New commands added: REPLACE, RENAME,
+            REPO DELETE/INSTALL/LIST, CREATE/DROP EVENT
+      [MOD] BACKUP optimized, renamed to CREATE BACKUP
+  * Added new database commands to man pages.
+
+ -- Alexander Holupirek <alex@holupirek.de>  Fri, 01 Jul 2011 08:19:19 +0200
+
+basex (6.6.2-1) unstable; urgency=low
+
+  * New upstream release
+    - API:
+      [ADD] JAX-RX API now supports basic user authentication:
+            http://docs.basex.org/wiki/JAX-RX_API
+      [ADD] The COPY creates identical database copies:
+            http://docs.basex.org/wiki/Commands#COPY
+      [ADD] The OPTIMIZE ALL command minimizes all database structures:
+            http://docs.basex.org/wiki/Commands#OPTIMIZE
+    - XQuery:
+      [ADD] map expressions and functions added:
+            http://docs.basex.org/wiki/Map_Functions
+      [MOD] File module aligned with latest EXPath specification:
+            http://docs.basex.org/wiki/File_Functions
+      [MOD] Speedup of full-text queries with keyword lists.
+            Example: $x contains text { 'a', 'b', 'c', ...}
+      [MOD] XQuery Update optimizations for replacing nodes;
+            tree-aware updates.
+      [MOD] XQuery optimizations to avoid materialization of sequences.
+    - GUI:
+      [ADD] Multiple editor tabs added
+      [ADD] Database management: copy databases
+    - Core:
+      [ADD] Internal XML parser: HTML entities added
+      [FIX] Glob syntax: support for multiple file suffixes
+  * Added new database commands to man pages.
+  * Adopted debian/copyright file.  ISC licensed files are gone now.
+  * Adopted debian/control file to reflect correct packaging Vcs-Git entry.
+  * Removed patch for build problem in 6.6.1-2.  Upstream incorporated the fix.
+
+ -- Alexander Holupirek <alex@holupirek.de>  Fri, 13 May 2011 16:36:01 +0200
+
+basex (6.6.1-3) unstable; urgency=low
+
+  * Provides more details on copyright and authorship in debian/copyright.
+    Thanks to Tony Mancill <tmancill@debian.org>.
+
+ -- Alexander Holupirek <alex@holupirek.de>  Wed, 27 Apr 2011 12:06:02 +0200
+
+basex (6.6.1-2) unstable; urgency=low
+
+  * Fix for build problem.
+    org/basex/gui/GUIMacOSX.java:[133,23] cannot find symbol
+    symbol  : method execute(org.basex.gui.GUI)
+    location: class org.basex.gui.GUICommands
+    Solution:
+    // explicit cast to circumvent Java compiler bug
+    ((GUICommand) GUICommands.PREFS).execute(main);
+
+ -- Alexander Holupirek <alex@holupirek.de>  Fri, 15 Apr 2011 16:54:33 +0200
+
+basex (6.6.1-1) unstable; urgency=low
+
+  * New upstream release
+    - XQuery:
+      [ADD] index rewritings added for .../text()[. = ..] syntax
+      [ADD] optimizations of mixed axis path expressions, e.g.: //x/name()
+      [MOD] index rewritings on collections fixed and generalized
+      [MOD] faster evaluation of filters with pos. predicates, e.g.: $x[5]
+      [FIX] fixed relocation of let clauses in GFLWOR expressions
+      [FIX] trace function returned wrong original results
+      [FIX] variables in catch clauses were discarded
+      [FIX] HOF optimizations and fixes
+    - GUI:
+      [FIX] language option (for Japanese, German, etc. interface) fixed
+  * Upstream moved to github, https://github.com/BaseXdb/basex 
+    - Adopted debian/watch file
+
+ -- Alexander Holupirek <alex@holupirek.de>  Fri, 15 Apr 2011 16:23:19 +0200
+
+basex (6.5.1-1ubuntu1~ppa3) maverick; urgency=low
+
+  * Update packaging, use symbolic version 6.x for Maven
+  * Refresh patches
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Sun, 20 Feb 2011 21:13:49 +0100
+
+basex (6.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #588216)
+
+ -- Alexander Holupirek <alex@holupirek.de>  Tue, 15 Feb 2011 21:13:25 +0100

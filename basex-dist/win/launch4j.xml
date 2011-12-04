@@ -1,0 +1,36 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>BaseX.jar</jar>
+  <outfile>BaseX.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>../images/BaseX.ico</icon>
+  $classpath
+  <jre>
+    <path></path>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <maxHeapSize>512</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>$full</fileVersion>
+    <txtFileVersion>BaseX $version</txtFileVersion>
+    <fileDescription>XML Database and XPath/XQuery Processor</fileDescription>
+    <copyright>(c) BaseX Team, 2011</copyright>
+    <productVersion>$full</productVersion>
+    <txtProductVersion>BaseX $version</txtProductVersion>
+    <productName>BaseX</productName>
+    <companyName>BaseX Team</companyName>
+    <internalName>BaseX GUI</internalName>
+    <originalFilename>BaseX.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
